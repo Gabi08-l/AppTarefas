@@ -5,21 +5,40 @@
 <div class="container py-5">
 
 	<div class="text-center mb-5">
-		<h1 class="display-4 fw-bold "><i class="bi bi-list-check"></i> AppTarefas </h1>
+		<h1 class="display-4 fw-bold "><i class="bi bi-ui-checks"></i> AppTarefas </h1>
 		<p class="lead text-dark-emphasis text-muted">Organize suas tarefas de forma simples!</p>
 		<a asp-controller="Tarefas" asp-action="Index" class="btn btn-danger btn-lg mt-3">Minhas Tarefas </a>
 	</div>
 
-	<div class="row justify-content-evenly">
+	<div class="row text-center">
 
-		<div class="col-3 bg-success"> 1 </div>
+		<div class="col-12 col-md-4 mb-4">
+			<div class="card shadow-sm h-100">
+				<div class="card-body">
+				</div>
+				<i class="bi bi-plus-circle display-4 text-primary mb-3"></i>
+				<p class="card-text text-muted">Crie novas tarefas rapidamente</p>
+				<h5>Adicionar Tarefa</h5>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 mb-4">
+			<div class="card shadow-sm h-100">
+				<div class="card-body">
+				</div>
+				<i class="bi bi-check-circle display-4 text-success mb-3"></i>
+				<p class="card-text text-muted">Conclua suas tarefas e foque no que importa!</p>
+				<h5>Marcar como Concluídas</h5>
+			</div>
+		</div>
 
-		<div class="col-3 bg-danger"> 2 </div>
-
-		<div class="col-3 bg-warning"> 3 </div>
-
-
+		<div class="col-12 col-md-4 mb-4">
+			<div class="card shadow-sm h-100">
+				<div class="card-body">
+				</div>
+				<i class="bi bi-trash display-4 text-danger mb-3"></i>
+				<p class="card-text text-muted">Exclua as tarefas que não são mais necessárias de forma facíl!</p>
+				<h5>Exclua Tarefas</h5>
+			</div>
+		</div>
 	</div>
-
-
 </div>
